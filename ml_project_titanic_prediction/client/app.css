@@ -1,0 +1,197 @@
+/* Body background with Titanic image */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(titanic_image_1.jpg); /* Add the Titanic image as the background */
+    background-size: cover; /* Make sure the background image covers the whole page */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styles */
+.container {
+    background-color: rgba(255, 255, 255, 0.90); /* Semi-transparent white background for readability */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+/* Header styles */
+h2 {
+    text-align: center;
+    color: #2c3e50; /* Dark blue-gray for contrast */
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-family: 'Playfair Display', serif; /* Elegant serif font for the title */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect for a stylish look */
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #fff;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-inline label {
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button styles - side by side */
+.form-group button {
+    width: 100%; /* Reduce width to fit side by side */
+    margin-right: 4%; /* Add spacing between the buttons */
+    margin-bottom: 1%;
+}
+
+
+button.clear-btn {
+    background-color: #b4b3b3;
+    margin-right: 0; /* Remove right margin from the clear button */
+    align-self: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.clear-btn:hover {
+    background-color: #aaaaaa;
+}
+
+/* To ensure the last button doesn't exceed the row */
+.form-group button:last-child {
+    margin-right: 0;
+}
+
+/* Survived message */
+.prediction-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Responsive styling */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.switch-field {
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #fff;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #cecdcd;
+    font-weight: 500;
+	box-shadow: none;
+    border-radius: 4px;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}

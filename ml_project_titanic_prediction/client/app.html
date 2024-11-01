@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Prediction Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Titanic Survival Prediction</h2>
+
+        <form id="titanicForm">
+
+            <!-- Age Text Input -->
+            <div class="form-group">
+                <label for="age"><b>Age:</b></label>
+                <input type="text" id="age" name="age" placeholder="Enter age">
+            </div>
+
+            <!-- Sex Radio Buttons -->
+            <div class="form-group">
+                <label><b>Sex:</b></label>
+                <div class="form-inline">
+                    <label><input type="radio" name="sex" value="male"> Male</label>
+                    <label><input type="radio" name="sex" value="female"> Female</label>
+                </div>
+            </div>
+
+               <!-- Pclass Radio Buttons -->
+               <div class="form-group">
+                <label><b>Passenger class:</b></label>
+                <div class="form-inline">
+                    <label><input type="radio" name="pclass" value="1"> First class</label>
+                    <label><input type="radio" name="pclass" value="2"> Second class</label>
+                    <label><input type="radio" name="pclass" value="3"> Third class</label>
+                </div>
+            </div>
+
+            <!-- SibSp -->
+            <div class="form-group">
+                <label for="sibsp"><b>Number of siblings or spouses aboard:</b></label>
+                <div class="switch-field">
+                    <input type="radio" id="radio-0" name="sibsp" value="0" checked/>
+                    <label for="radio-0">0</label>
+                    <input type="radio" id="radio-1" name="sibsp" value="1"/>
+                    <label for="radio-1">1</label>
+                    <input type="radio" id="radio-2" name="sibsp" value="2"/>
+                    <label for="radio-2">2</label>
+                    <input type="radio" id="radio-3" name="sibsp" value="3"/>
+                    <label for="radio-3">3</label>
+                    <input type="radio" id="radio-4" name="sibsp" value="4"/>
+                    <label for="radio-4">4</label>
+                    <input type="radio" id="radio-5" name="sibsp" value="5"/>
+                    <label for="radio-5">5</label>
+                    <input type="radio" id="radio-6" name="sibsp" value="6"/>
+                    <label for="radio-6">6</label>
+                    <input type="radio" id="radio-7" name="sibsp" value="7"/>
+                    <label for="radio-7">7</label>
+                    <input type="radio" id="radio-8" name="sibsp" value="8"/>
+                    <label for="radio-8">8</label>
+                    <input type="radio" id="radio-9" name="sibsp" value="9"/>
+                    <label for="radio-9">9</label>
+                </div>
+            </div>
+
+            <!-- Parch -->
+            <div class="form-group">
+                <label for="sibsp"><b> Number of parents or children aboard:</b></label>
+                <div class="switch-field">
+                    <input type="radio" id="radio-parch-0" name="parch" value="0" checked/>
+                    <label for="radio-parch-0">0</label>
+                    <input type="radio" id="radio-parch-1" name="parch" value="1"/>
+                    <label for="radio-parch-1">1</label>
+                    <input type="radio" id="radio-parch-2" name="parch" value="2"/>
+                    <label for="radio-parch-2">2</label>
+                    <input type="radio" id="radio-parch-3" name="parch" value="3"/>
+                    <label for="radio-parch-3">3</label>
+                    <input type="radio" id="radio-parch-4" name="parch" value="4"/>
+                    <label for="radio-parch-4">4</label>
+                    <input type="radio" id="radio-parch-5" name="parch" value="5"/>
+                    <label for="radio-parch-5">5</label>
+                    <input type="radio" id="radio-parch-6" name="parch" value="6"/>
+                    <label for="radio-parch-6">6</label>
+                    <input type="radio" id="radio-parch-7" name="parch" value="7"/>
+                    <label for="radio-parch-7">7</label>
+                    <input type="radio" id="radio-parch-8" name="parch" value="8"/>
+                    <label for="radio-parch-8">8</label>
+                    <input type="radio" id="radio-parch-9" name="parch" value="9"/>
+                    <label for="radio-parch-9">9</label>
+                </div>
+            </div>
+
+            <!-- Fare Text Input -->
+            <div class="form-group">
+                <label for="fare"><b>Ticket fare:</b></label>
+                <input type="text" id="fare" name="fare" placeholder="Enter fare">
+            </div>
+
+            <!-- Embarked Radio Buttons -->
+            <div class="form-group">
+                <label><b>Port of embarkation:</b></label>
+                <div class="form-inline">
+                    <label><input type="radio" name="embarked" value="S"> Southampton</label>
+                    <label><input type="radio" name="embarked" value="C"> Cherbourg</label>
+                    <label><input type="radio" name="embarked" value="Q"> Queenstown</label>
+                </div>
+            </div>
+
+            <!-- Submit and Clear Buttons -->
+            <div class="form-group">
+                <button type="button" onclick="onClickedPredict()">Predict</button>
+                <button type="button" onclick="clearForm()" class="clear-btn">Clear</button>
+            </div>
+
+        </form>
+
+        <div id="predictionMessage" class="prediction-message" style="display: none;">Survived</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+

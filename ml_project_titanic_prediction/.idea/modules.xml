@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../code_basics_machine_learning/machine_learing_Project/BHP/.idea/Real_Estate_Price_Prediction.iml" filepath="$PROJECT_DIR$/../../code_basics_machine_learning/machine_learing_Project/BHP/.idea/Real_Estate_Price_Prediction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/titanic_prediction_project.iml" filepath="$PROJECT_DIR$/.idea/titanic_prediction_project.iml" />
+    </modules>
+  </component>
+</project>
